@@ -1,28 +1,30 @@
-# 📊 Sistema de Gestão de Projetos
+# 📊 Project Management System
 
-Sistema completo de gestão de projetos desenvolvido para organização e acompanhamento de tarefas, permitindo o controle eficiente de atividades, equipes e progresso.
+A complete project management system designed to organize and track tasks, enabling efficient control of activities, teams, and progress.
 
-A aplicação conta com backend em Laravel e frontend em Vue.js, oferecendo uma interface moderna, responsiva e integrada a uma API RESTful.
+The application features a Laravel backend and a Vue.js frontend, providing a modern, responsive interface integrated with a RESTful API.
 
-## 🏗️ Arquitetura
+## 🌎️ Languages
+- *[Português (Brasil) 🇧🇷](./readme-pt-br.md)
+## 🏗️ Architecture
 
 * **Backend**: Laravel 12 + MySQL/MariaDB + Sanctum Auth
 * **Frontend**: Vue.js 3 + Vite + Pinia + Vue Router
-* **API**: RESTful com autenticação via tokens
-* **Banco de Dados**: MySQL/MariaDB
+* **API**: RESTful with token-based authentication
+* **Database**: MySQL/MariaDB
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-* ✅ Autenticação de usuários (registro e login)
-* ✅ CRUD completo de projetos
-* ✅ CRUD completo de tarefas (vinculadas a projetos)
-* ✅ Relatórios detalhados
-* ✅ Interface responsiva
-* ✅ Validações frontend e backend
+* ✅ User authentication (register and login)
+* ✅ Full CRUD for projects
+* ✅ Full CRUD for tasks (linked to projects)
+* ✅ Detailed reports
+* ✅ Responsive interface
+* ✅ Frontend and backend validations
 
-## 📋 Pré-requisitos
+## 📋 Prerequisites
 
-### Para Arch Linux:
+### For Arch Linux:
 
 ```bash
 sudo pacman -S php php-fpm composer
@@ -33,15 +35,15 @@ sudo mysql_secure_installation
 sudo pacman -S nodejs npm
 ```
 
-### Para Windows:
+### For Windows:
 
 1. XAMPP (PHP + MySQL)
 2. Composer
 3. Node.js
 
-## 🛠️ Instalação e Configuração
+## 🛠️ Installation and Setup
 
-### 1. Clonar o Repositório
+### 1. Clone the Repository
 
 ```bash
 git clone git@github.com:mattsu014/desafio-3e.git
@@ -57,9 +59,9 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-#### Banco de Dados:
+#### Database Setup:
 
-Crie um banco chamado `gestaoprojetos` e configure o `.env`:
+Create a database named `gestaoprojetos` and configure the `.env` file:
 
 ```env
 DB_CONNECTION=mysql
@@ -67,7 +69,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=gestaoprojetos
 DB_USERNAME=root
-DB_PASSWORD=sua_senha_aqui
+DB_PASSWORD=your_password_here
 ```
 
 ```bash
@@ -75,7 +77,7 @@ php artisan migrate
 php artisan serve
 ```
 
-Backend: http://localhost:8000
+Backend running at: http://localhost:8000
 
 ### 3. Frontend (Vue.js)
 
@@ -85,9 +87,9 @@ npm install
 npm run dev
 ```
 
-Frontend: http://localhost:5173
+Frontend running at: http://localhost:5173
 
-## 🗃️ Estrutura do Banco
+## 🗃️ Database Structure
 
 * `users`
 * `projects`
@@ -96,13 +98,13 @@ Frontend: http://localhost:5173
 
 ## 🔐 API Endpoints
 
-### Autenticação
+### Authentication
 
 * POST /api/register
 * POST /api/login
 * GET /api/user
 
-### Projetos
+### Projects
 
 * GET /api/projects
 * POST /api/projects
@@ -110,7 +112,7 @@ Frontend: http://localhost:5173
 * PUT /api/projects/{id}
 * DELETE /api/projects/{id}
 
-### Tarefas
+### Tasks
 
 * GET /api/tasks
 * POST /api/tasks
@@ -118,20 +120,20 @@ Frontend: http://localhost:5173
 * PUT /api/tasks/{id}
 * DELETE /api/tasks/{id}
 
-### Relatórios
+### Reports
 
 * GET /api/reports/general
 * GET /api/reports/tasks-by-project
 * GET /api/reports/pending-tasks
 
-## 🧪 Testes
+## 🧪 Testing
 
-### Interface Web
+### Web Interface
 
-1. Acesse o frontend
-2. Crie uma conta
-3. Faça login
-4. Gerencie projetos e tarefas
+1. Access the frontend
+2. Create an account
+3. Log in
+4. Manage projects and tasks
 
 ### API (Postman/Insomnia)
 
@@ -140,40 +142,45 @@ POST /api/register
 POST /api/login
 ```
 
-Use o token retornado:
+Use the returned token:
 
 ```
 Authorization: Bearer {token}
 ```
 
-## 📱 Uso da Aplicação
+## 📱 Application Usage
 
-* Criar e gerenciar projetos
-* Adicionar tarefas vinculadas
-* Atualizar status de tarefas
-* Visualizar relatórios e métricas
+* Create and manage projects
+* Add tasks linked to projects
+* Update task status
+* View reports and metrics
 
-## 🎯 Funcionalidades Implementadas
+## 🎯 Implemented Features
 
-* Sistema de autenticação
-* CRUD de projetos e tarefas
-* Relatórios analíticos
-* Interface responsiva
-* Gerenciamento de estado com Pinia
-* Navegação com Vue Router
+* Authentication system
+* Project and task CRUD
+* Analytical reports
+* Responsive interface
+* State management with Pinia
+* Routing with Vue Router
 
-## 📚 Tecnologias Utilizadas
+## 📚 Technologies Used
 
 * Laravel
 * Vue.js
 * MySQL
 * REST API
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 Mateus Valentim
 GitHub: https://github.com/mattsu014
 
+## 📄 License
+
+This project is free to use for educational and professional purposes.
+
 ---
 
-💡 **Dica:** mantenha backend e frontend rodando simultaneamente para funcionamento completo.
+💡 **Tip:** Make sure both backend and frontend servers are running simultaneously for the application to work properly.
+
