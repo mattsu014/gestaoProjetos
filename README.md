@@ -5,7 +5,7 @@ A complete project management system designed to organize and track tasks, enabl
 The application features a Laravel backend and a Vue.js frontend, providing a modern, responsive interface integrated with a RESTful API.
 
 ## 🌎️ Languages
-- *[Português (Brasil) 🇧🇷](./readme-pt-br.md)
+- [Português (Brasil) 🇧🇷](./readme-pt-br.md)
 ## 🏗️ Architecture
 
 * **Backend**: Laravel 12 + MySQL/MariaDB + Sanctum Auth
